@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import List from './components/List';
+import './App.css'; // Import external CSS for styling
 
 function App() {
   const [lists, setLists] = useState([]);
@@ -51,7 +52,7 @@ function App() {
   };
 
   return (
-    <div style={{ display: 'flex', padding: '20px', gap: '20px', overflowX: 'auto' }}>
+    <div className="app-container">
       {lists.map((list) => (
         <List
           key={list.id}
@@ -61,7 +62,9 @@ function App() {
           handleDrop={handleDrop}
         />
       ))}
-      <button onClick={addList}>+ Add List</button>
+      <div className="add-list-button" onClick={addList}>
+        + Add List
+      </div>
     </div>
   );
 }
