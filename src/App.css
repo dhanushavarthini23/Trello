@@ -1,0 +1,88 @@
+/* App.css */
+.app-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    background-color: #eaeaea;
+  }
+  
+  .add-list-button {
+    background-color: #0079bf;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-list-button:hover {
+    background-color: #005f83;
+  }
+  
+  .add-list-button:active {
+    background-color: #004d6d;
+  }
+  
+  /* Add list container and style */
+  .list-container {
+    min-width: 250px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .list-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card {
+    background-color: #fff;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    cursor: move;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .card button {
+    background-color: #0079bf;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #005f83;
+  }
+  
+  /* Dragging styles */
+  .list-container {
+    min-height: 300px; /* Prevent collapsing if no cards exist */
+  }
+  
+  
