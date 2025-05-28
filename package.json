@@ -1,15 +1,19 @@
 {
   "name": "trello",
   "private": true,
+  "homepage": "https://dhanushavarthini23.github.io/Trello",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-window": "^1.8.11"
